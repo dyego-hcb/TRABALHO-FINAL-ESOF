@@ -1,0 +1,199 @@
+/* EDICOES DE ESTILOS DAS TAGS HTML PADROES */
+body {
+  min-width: 372px;
+}
+footer {
+  background-color: #f7cb15;
+}
+label:hover .text-dark {
+  transition: color 0.2 ease;
+  color: white !important;
+}
+label .text-dark {
+  transition: color 0.2 ease;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #f7cb15;
+  color: white;
+  box-shadow: none;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+.page-link {
+  color: #f7cb15;
+}
+
+/* EDICOES DE ESTILOS DE CLASSES */
+
+.wrapper {
+  min-height: 100vh;
+}
+.imgLogoQuemSomos {
+  margin-left: 280px;
+}
+.bg-Amarelo {
+  background-color: #f7cb15;
+}
+.dropdown-item:hover{
+  background-color: #f7cb15;
+}
+a.bg-Amarelo:hover {
+  background-color: #f7cb15;
+}
+.btn-Amarelo {
+  background-color: #f7cb15;
+}
+.btn-Amarelo:hover {
+  color: #fff;
+  background-color: #f7cb15;
+}
+.btn-outline-amarelo {
+  color: #f7cb15;
+  border-color: #f7cb15;
+}
+.btn-outline-amarelo:hover {
+  color: #fff;
+  background-color: #f7cb15;
+  border-color: #f7cb15;
+}
+.btn-check:checked + .btn-outline-amarelo .text-dark,
+.btn-check:active + .btn-outline-amarelo .text-dark,
+.btn-check:hover + .btn-outline-amarelo .text-dark {
+  transition: color 0.2 ease;
+  color: white !important;
+}
+.btn-check:checked + .btn-outline-amarelo,
+.btn-check:active + .btn-outline-amarelo,
+.btn-check:hover + .btn-outline-amarelo {
+  color: #fff;
+  background-color: #f7cb15;
+  border-color: #f7cb15;
+}
+.text-Amarelo {
+  color: #f7cb15;
+}
+p.truncar-3l {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cookieConsentContainer {
+  z-index: 999;
+  width: 350px;
+  min-height: 20px;
+  box-sizing: border-box;
+  padding: 30px 30px 30px 30px;
+  background: black;
+  overflow: hidden;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none;
+}
+.cookieConsentContainer .cookieTitle a {
+  font-family: OpenSans, arial, sans-serif;
+  color: #fff;
+  font-size: 22px;
+  line-height: 20px;
+  display: block;
+}
+.cookieConsentContainer .cookieDesc p {
+  margin: 0;
+  padding: 0;
+  font-family: OpenSans, arial, sans-serif;
+  color: #fff;
+  font-size: 13px;
+  line-height: 20px;
+  display: block;
+  margin-top: 10px;
+}
+.cookieConsentContainer .cookieDesc a {
+  font-family: OpenSans, arial, sans-serif;
+  color: #fff;
+  text-decoration: underline;
+}
+.cookieConsentContainer .cookieButton a {
+  display: inline-block;
+  font-family: OpenSans, arial, sans-serif;
+  color: dark;
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 14px;
+  background: #f7cb15;
+  box-sizing: border-box;
+  padding: 15px 24px;
+  text-align: center;
+  transition: background 0.3s;
+}
+.cookieConsentContainer .cookieButton a:hover {
+  cursor: pointer;
+  background: #f7cb15;
+  color: white
+}
+.cookieConsentContainer .cookieTitle a:hover {
+  cursor: pointer;
+  color: #f7cb15;
+}
+.cookieConsentContainer .cookieDesc a:hover {
+  font-family: OpenSans, arial, sans-serif;
+  color: #f7cb15;
+  text-decoration: underline;
+}
+.whatsapp-link {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #f7cb15;
+  color: black;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 1px 1px 2px #f7cb33;
+  z-index: 1000;
+}
+.whatsapp-link:hover {    
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #f7cb15;
+  color: white;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 1px 1px 2px #f7cb33;
+  z-index: 1000;
+}
+.fa-whatsapp {
+  margin-top: 16px;
+  color: black
+}
+.fa-whatsapp:hover {
+  margin-top: 16px;
+  color: white
+}
+
+/* EDICOES DE ESTILO DE TELAS */
+
+@media screen and (max-width: 469px) {
+  .mt-xs-3 {
+    margin-top: 1rem;
+  }
+}
+.flex-even {
+  flex: 1;
+  min-width: 300px;
+}
+@media (max-width: 980px) {
+  .cookieConsentContainer {
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+  }
+}
